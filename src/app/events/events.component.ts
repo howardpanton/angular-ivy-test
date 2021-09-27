@@ -7,7 +7,7 @@ import { EventService } from '../services/event.service';
   styleUrls: ['./events.component.scss'],
 })
 export class EventsComponent implements OnInit {
-  constructor(private eventsService: EventService) {}
+  constructor() {}
 
   ngOnInit() {}
 }
