@@ -12,9 +12,10 @@ export class EventService {
 
   constructor(private http: HttpClient) {}
 
+  /**
+   * Get TV Event Data
+   */
   getEvents(): Observable<IEventSchedule> {
-    return this.http
-      .get<any>(this.eventsUrl)
-      .pipe(tap((_) => console.log('fetched heroes')));
+    return this.http.get<any>(this.eventsUrl);
   }
 }

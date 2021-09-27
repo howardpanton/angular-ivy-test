@@ -9,9 +9,5 @@ import { EventService } from '../services/event.service';
 export class EventsComponent implements OnInit {
   constructor(private eventsService: EventService) {}
 
-  ngOnInit() {
-    this.eventsService.getEvents().subscribe((data) => {
-      console.log(data, 'sdata');
-    });
-  }
+  ngOnInit() {}
 }
